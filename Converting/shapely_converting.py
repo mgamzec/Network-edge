@@ -108,3 +108,25 @@ for i in data["features"]:
 
 print(g)
 
+
+############################################################################################
+# Shapely coordinate sequence to GeoDataFrame
+############################################################################################
+'''
+- Make a shapely polygon geometry from coordinate pairs
+- Pass the polygon to GeoDataFrame constructor as a list
+'''
+import geopandas as gpd
+from shapely.geometry import Polygon
+
+coords = [(28.4874173505483, 41.56314098794968),
+          (28.3141785902844, 40.67591663499303),
+          (32.93604091048252, 39.78301389641658),
+          (32.90288633149217, 40.40177040007765),
+          (28.4874173505483, 41.56314098794968)]
+
+polygon = Polygon(coords)
+
+gdf = gpd.GeoDataFrame(index=[0], crs='epsg:4326', geometry=[polygon])
+print(gdf)
+
