@@ -65,7 +65,6 @@ print(Polygon)
 
 ############################################################################################
 # Convert GeoJSON geometry to new coordinate system and WKB format in python
-# Maslak-METU Devrim(:
 ############################################################################################
 
 ''' {
