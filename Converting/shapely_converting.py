@@ -10,9 +10,8 @@ from shapely.geometry import Polygon
 from shapely.geometry import MultiPolygon
 from shapely.geometry import shape
 
-############################################################################################
-# Convert geojson to shapely polygon
-############################################################################################
+###############
+# Convert geojson to shapely 
 
 from shapely.geometry import shape
 from shapely.geometry.polygon import Polygon
@@ -63,9 +62,9 @@ print(Polygon)
 
 
 
-############################################################################################
+############################################################################
 # Convert GeoJSON geometry to new coordinate system and WKB format in python
-############################################################################################
+############################################################################
 
 ''' {
   "type": "FeatureCollection",
@@ -108,9 +107,9 @@ for i in data["features"]:
 print(g)
 
 
-############################################################################################
+#############################################
 # Shapely coordinate sequence to GeoDataFrame
-############################################################################################
+#############################################
 '''
 - Make a shapely polygon geometry from coordinate pairs
 - Pass the polygon to GeoDataFrame constructor as a list
